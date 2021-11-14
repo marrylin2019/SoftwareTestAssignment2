@@ -24,7 +24,7 @@ public class StdNextDayDate {
                 date[2] = 1;
                 if (++date[1] > MAX_MONTH) {
                     date[1] = 1;
-                    date[0]++;
+                    if (++date[0] > 9999) return "Overflow on!";
                 }
             }
             return String.format("%04d-%02d-%02d", date[0], date[1], date[2]);
