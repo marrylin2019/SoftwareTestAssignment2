@@ -27,7 +27,7 @@ public class StdNextDayDate {
                     date[0]++;
                 }
             }
-            return String.format("%4d-%2d-%2d", date[0], date[1], date[2]);
+            return String.format("%04d-%02d-%02d", date[0], date[1], date[2]);
         }
         return "";
     }

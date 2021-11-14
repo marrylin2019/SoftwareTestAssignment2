@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 public class NextDayDateForRobustnessTest {
     @Parameters(name = "{index}: getNextDayDate({0})={1}")
     public static Iterable<String[] > testCasesGenerator() {
-        return NextDayDateTestCasesGenerator.generateBoundaryTestCases();
+        return NextDayDateTestCasesGenerator.generateRobustnessTestCases();
     }
 
     @Parameter

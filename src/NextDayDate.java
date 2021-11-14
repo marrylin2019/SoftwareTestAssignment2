@@ -14,19 +14,19 @@ public class NextDayDate {
             if(a==1) {
                 if(d<=month2[m-1])
 
-                    return String.format("%4d-%02d-%02d", y,m,d);
+                    return String.format("%04d-%02d-%02d", y,m,d);
                 else
                     m=m+1;
                 d=1;
-                return String.format("%4d-%02d-%02d", y,m,d);
+                return String.format("%04d-%02d-%02d", y,m,d);
             }
             else {
                 if(d<=month1[m-1])
-                    return String.format("%4d-%02d-%02d", y,m,d);
+                    return String.format("%04d-%02d-%02d", y,m,d);
                 else
                     m=m+1;
                 d=1;
-                return String.format("%4d-%02d-%02d", y,m,d);
+                return String.format("%04d-%02d-%02d", y,m,d);
             }
         }
         else if(m==12) {
@@ -34,21 +34,21 @@ public class NextDayDate {
                 y=y+1;
                 m=1;
                 d=d-31;
-                return String.format("%4d-%02d-%02d", y,m,d);
+                return String.format("%04d-%02d-%02d", y,m,d);
             }
             else {
-                return String.format("%4d-%2d-%02d", y,m,d);
+                return String.format("%04d-%2d-%02d", y,m,d);
             }
         }
         else {
             if(d<month1[m-1]) {
-                return String.format("%4d-%02d-%02d", y,m,d);
+                return String.format("%04d-%02d-%02d", y,m,d);
             }
             else
             {
                 m=m+1;
                 d=1;
-                return String.format("%4d-%02d-%02d", y,m,d);
+                return String.format("%04d-%02d-%02d", y,m,d);
             }
         }
     }
