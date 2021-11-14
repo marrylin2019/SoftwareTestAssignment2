@@ -7,21 +7,45 @@ public class NextDayDateTestCasesGenerator {
 
     public static ArrayList<String[] > generateBoundaryTestCases() {
         ArrayList<String[] > result = new ArrayList<>();
+        result.add(new String[]{"0000-01-01",StdNextDayDate.getNextDayDate("0000-01-01")});
+        result.add(new String[]{"0000-01-02",StdNextDayDate.getNextDayDate("0000-01-02")});
+        result.add(new String[]{"9999-12-31",StdNextDayDate.getNextDayDate("9999-12-31")});
+        result.add(new String[]{"9999-12-30",StdNextDayDate.getNextDayDate("9999-12-30")});
+        result.add(new String[]{"2021-11-14",StdNextDayDate.getNextDayDate("2021-11-14")});
         return result;
     }
 
     public static ArrayList<String[] > generateRobustnessTestCases() {
         ArrayList<String[] > result = new ArrayList<>();
+        result.add(new String[]{"0000-01-01",StdNextDayDate.getNextDayDate("0000-01-01")});
+        result.add(new String[]{"0000-01-02",StdNextDayDate.getNextDayDate("0000-01-02")});
+        result.add(new String[]{"9999-12-31",StdNextDayDate.getNextDayDate("9999-12-31")});
+        result.add(new String[]{"9999-12-30",StdNextDayDate.getNextDayDate("9999-12-30")});
+        result.add(new String[]{"2021-11-14",StdNextDayDate.getNextDayDate("2021-11-14")});
+        result.add(new String[]{"0000-01-00",StdNextDayDate.getNextDayDate("0000-01-00")});
+        result.add(new String[]{"9999-12-32",StdNextDayDate.getNextDayDate("9999-12-32")});
         return result;
     }
 
     public static ArrayList<String[] > generateWorstCaseTestCases() {
         ArrayList<String[] > result = new ArrayList<>();
+        result.add(new String[]{"0000-01-01",StdNextDayDate.getNextDayDate("0000-01-01")});
+        result.add(new String[]{"0000-01-02",StdNextDayDate.getNextDayDate("0000-01-02")});
+        result.add(new String[]{"9999-12-31",StdNextDayDate.getNextDayDate("9999-12-31")});
+        result.add(new String[]{"9999-12-30",StdNextDayDate.getNextDayDate("9999-12-30")});
+        result.add(new String[]{"2021-11-14",StdNextDayDate.getNextDayDate("2021-11-14")});
         return result;
     }
 
     public static ArrayList<String[] > generateRobustWorstCaseTestCases() {
         ArrayList<String[] > result = new ArrayList<>();
+        result.add(new String[]{"0000-01-01",StdNextDayDate.getNextDayDate("0000-01-01")});
+        result.add(new String[]{"0000-01-02",StdNextDayDate.getNextDayDate("0000-01-02")});
+        result.add(new String[]{"9999-12-31",StdNextDayDate.getNextDayDate("9999-12-31")});
+        result.add(new String[]{"9999-12-30",StdNextDayDate.getNextDayDate("9999-12-30")});
+        result.add(new String[]{"2021-11-14",StdNextDayDate.getNextDayDate("2021-11-14")});
+        result.add(new String[]{"0000-01-00",StdNextDayDate.getNextDayDate("0000-01-00")});
+        result.add(new String[]{"9999-12-32",StdNextDayDate.getNextDayDate("9999-12-32")});
         return result;
     }
 
