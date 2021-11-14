@@ -4,7 +4,7 @@ import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
 @SuiteClasses({
-    NextDayDateTest.class,
+    NextDayDateForBoundaryTest.class,
     VolumeCalculatorForBoundaryTest.class,
     VolumeCalculatorForRobustnessTest.class,
     VolumeCalculatorForWorstCaseTest.class,

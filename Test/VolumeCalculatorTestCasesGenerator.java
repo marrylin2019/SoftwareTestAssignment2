@@ -3,9 +3,9 @@ import java.util.HashSet;
 
 public class VolumeCalculatorTestCasesGenerator {
     /**   getVolume(length={0}, width={1}, height={2})={3}  **/
-    final static int NUM_OF_VAR = 3;  // Variables
+    private final static int NUM_OF_VAR = 3;  // Variables
     //    下述边界值的排列顺序为{长最小值，长最大值，宽最小值，宽最大值，高最小值，高最大值}
-    final static int[] boundaryVals = {2, 100, 5, 200, 20, 80};
+    private final static int[] boundaryVals = {2, 100, 5, 200, 20, 80};
 
     public static ArrayList<Integer[] > generateBoundaryTestCases() {
         // 总测试样例数为4*NUM_OF_VAR+1=13
