@@ -1,6 +1,6 @@
 # Mainly Description
 
-This is a **Software Testing Assignment** in SDUT. 
+This is a **Software Testing Assignment** in ****. 
 
 The most important issue is that **the repositories is used for Version Control and team work**!!!
 
